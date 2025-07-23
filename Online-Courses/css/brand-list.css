@@ -1,0 +1,295 @@
+/* 共用模組 */
+.d-flex {
+    display: flex;
+}
+
+.list-none {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+/* 字級 */
+.f-14 {
+    font-size: 14px;
+}
+
+/* 顏色 */
+.color_g {
+    color: #57A203;
+}
+
+.color_gy {
+    color: #6C757D;
+}
+
+hr {
+    background-color: #DEE2E6;
+    height: 1px;
+    margin: 32px auto;
+    width: 100%;
+    border: 0;
+}
+
+/*框架*/
+.wrapper {
+    margin: 0 auto;
+}
+
+/* top banner-------------------------*/
+.hd-content {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    width: 856px;
+    margin: 0 auto;
+}
+
+.hd-content nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-bar {
+    display: flex;
+}
+
+.menu-bar span {
+    margin: 0 20px;
+}
+
+span.logo {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg) no-repeat center center;
+    height: 30px;
+    width: 105px;
+    display: inline-block;
+}
+
+span.user {
+    background: url(../images/loing.svg) no-repeat center center;
+    background-size: 100%;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+}
+
+/*品牌介紹開始 ----------------------*/
+.Product-content {
+    width: 856px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+/* 麵包屑導航 */
+.breadcrumb {
+    margin-bottom: 24px;
+    color: #212529;
+}
+
+.breadcrumb ul li a {
+    color: #6C757D;
+    text-decoration: none;
+
+}
+
+.breadcrumb ul li a::after {
+    content: "/";
+    margin: 0 12px;
+    text-decoration: none;
+}
+
+.breadcrumb ul li:last-child:after {
+    content: "";
+    margin: 0 12px;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.h2-title {
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+}
+
+nav.Product-menu {width: 198px;}
+
+nav.Product-menu li{padding: 16px 0;}
+.card-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-item img {
+    max-width: 100%;
+    width: 342px;
+    margin-bottom: 12px;
+}
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom:12px;
+}
+.price{}
+
+.Brand-intro img {
+    margin: 0 -110px 0 -110px;
+}
+
+.Brand-intro h2.title {
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+.Brand-intro ul.m-left {
+    margin-left: 24px;
+}
+
+.Brand-intro ul {
+    margin: 6px 0;
+}
+
+.Brand-intro ul li {
+    margin-bottom: 12px;
+}
+
+/* 頁碼清單 -------------------------*/
+.Pagination-bar {
+    margin: 48px auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Pagination-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pagination-bar ul li {
+    width: 48px;
+    height: 48px;
+    margin: 0 8px;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.Pagination-bar ul li:hover {
+    background-color: #C0FA73;
+}
+
+.Pagination-bar .Previous,
+.Pagination-bar .Next {
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #212529;
+    border-bottom: 2px solid #212529;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.Pagination-bar .Previous:hover,
+.Pagination-bar .Next:hover {
+    background-color: transparent;
+    border-right: 2px solid #CACDD5;
+    border-bottom: 2px solid #CACDD5
+}
+
+.Pagination-bar .Previous {
+    transform: translateY(-50%) rotate(136deg);
+}
+
+.Pagination-bar .Next {
+    transform: translateY(-50%) rotate(315deg);
+}
+
+.Pagination-bar li:hover.Previous {
+    transform: translateY(-50%) rotate(136deg);
+}
+
+.Pagination-bar .Previous.active,
+.Pagination-bar .Next.active {
+    border-right: 2px solid #CACDD5;
+    border-bottom: 2px solid #CACDD5;
+}
+
+/* 加入會員---------------------------*/
+.Join-us {
+    background-color: #E8FEC5;
+    font-size: 24px;
+    color: #212529;
+    padding: 24px 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+
+}
+
+.Join-us span {
+    border-radius: 4px;
+    background-color: #212529;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin: 0 0 0 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* footer開始-------------------------- */
+footer {
+    background-color: #F8F9FA;
+    padding: 64px 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Copyright {
+    margin: 32px auto 0 auto;
+    color: #6C757D;
+}
+
+.Copyright p {
+    margin-bottom: 4px;
+}
+
+/* footer nav 樣式 */
+.fd-menu {
+    padding: 4px 4px 32px 4px;
+    border-bottom: 1px solid #DEE2E6;
+    align-items: center;
+    justify-content: space-between;
+    width: 856px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.fd-menu .logo {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg) no-repeat center center;
+    width: 129px;
+    height: 46px;
+}
+
+.fd-menu p {
+    margin: 0;
+}
+
+.fd-menu span {
+    margin: 0 8px;
+    font-weight: 700;
+}
