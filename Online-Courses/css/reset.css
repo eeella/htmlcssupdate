@@ -134,6 +134,7 @@ a {
     color: #000;
     text-underline-offset: 4px;
     display: block;
+    text-decoration:none;
 }
 
 ::marker{list-style: none;}
