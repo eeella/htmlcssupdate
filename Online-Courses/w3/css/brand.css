@@ -1,0 +1,264 @@
+/* 共用模組 */
+.d-flex {
+    display: flex;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 16px 0;
+}
+
+.color_g {
+    color: #57A203;
+}
+
+hr {
+    background-color: #DEE2E6;
+    height: 1px;
+    margin: 32px auto;
+    width: 100%;
+    border: 0;
+}
+
+/*框架*/
+.wrapper {
+    margin: 0 auto;
+}
+
+/* top banner-------------------------*/
+.hd-content {
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true) no-repeat center center;
+    padding: 151px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.logo {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg) no-repeat center center;
+}
+
+h1.title {
+    font-size: 40px;
+}
+
+.Sub {
+    display: block;
+    font-size: 28px;
+}
+
+/*品牌介紹開始 ----------------------*/
+.Brand-content {
+    width: 856px;
+    margin: 0 auto;
+    padding: 64px 0;
+}
+
+.Brand-hot {
+    padding: 32px 0;
+    background-color: #F5FEE7;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.h4-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.list-none {
+    list-style: none;
+}
+
+
+.Brand-intro {
+    flex-direction: column;
+}
+
+.Brand-intro img {
+    margin: 0 -110px 0 -110px;
+}
+
+.Brand-intro h2.title {
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+.Brand-intro ul.m-left {
+    margin-left: 24px;
+}
+
+.Brand-intro ul {
+    margin: 6px 0;
+}
+
+.Brand-intro ul li {
+    margin-bottom: 12px;
+}
+
+.Brand-intro ul.list-grline li {
+    margin: 6px 0;
+    border-left: 3px solid #DEE2E6;
+    list-style: none;
+}
+
+.Brand-intro ul.list-grline li span {
+    margin: auto 0 auto 10px;
+
+}
+
+.Brand-intro ul.list-story li span {
+    margin: auto 0 auto 8px;
+}
+
+.Brand-intro ul.list-story li span.border-b {
+    border-bottom: 1px #57A203 solid;
+}
+
+/* 加入會員*/
+.Join-us {
+    background-color: #E8FEC5;
+    font-size: 24px;
+    color: #212529;
+    padding: 24px 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+
+}
+
+.Join-us span {
+    border-radius: 4px;
+    background-color: #212529;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin: 0 0 0 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* footer開始-------------------------- */
+footer {
+    background-color: #F8F9FA;
+    padding: 64px 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Copyright {
+    margin: 32px auto 0 auto;
+    color: #6C757D;
+}
+
+.Copyright p {
+    margin-bottom: 4px;
+}
+
+/* footer nav 樣式 */
+.fd-Menu {
+    padding: 4px 4px 32px 4px;
+    border-bottom: 1px solid #DEE2E6;
+    align-items: center;
+    justify-content: space-between;
+    width: 856px;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+.fd-Menu .logo {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg) no-repeat center center;
+    width: 129px;
+    height: 46px;
+}
+
+.fd-Menu p {
+    margin: 0;
+}
+
+.fd-Menu span {
+    margin: 0 8px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+
+    /* p {
+        text-align: justify;
+    } */
+    h1.title {
+        margin-bottom: 8px;
+    }
+
+    .Brand-content {
+        padding: 32px 12px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .Brand-hot {
+        margin-bottom: 32px;
+        padding: 24px 24px;
+    }
+
+    .Brand-intro img {
+        margin: 0;
+    }
+
+    .Brand-intro h2.title {
+        font-size: 20px;
+    }
+
+    .h4-title {
+        font-size: 16px;
+    }
+
+    .Join-us {
+        font-size: 20px;
+        margin: 0 -16px;
+        padding: 24px;
+    }
+
+    .Join-us span {
+        margin: 0 0 0 16px;
+
+    }
+
+    /* footer */
+    footer {
+        padding: 32px 0;
+    }
+
+    .fd-Menu .logo {
+        padding: 8ps 0;
+    }
+
+    .fd-Menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4px 4px 24px 4px;
+    }
+
+    .fd-Menu span {
+        display: block;
+        padding: 12px 0;
+
+    }
+}

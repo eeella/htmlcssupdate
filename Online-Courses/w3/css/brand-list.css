@@ -1,0 +1,751 @@
+/* 共用模組 */
+.d-flex {
+    display: flex;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.d-none {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+/* 字級 */
+.f-32 {
+    font-size: 32px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.f-14 {
+    font-size: 14px;
+
+}
+
+.f-700 {
+    font-weight: 700;
+}
+
+.f-500 {
+    font-weight: 500;
+}
+
+/* 顏色 */
+.color_bk {
+    color: #212529;
+}
+
+.color_g {
+    color: #57A203;
+}
+
+.color_gy {
+    color: #6C757D;
+
+}
+
+.color_red {
+    color: #D74F4F;
+}
+
+hr {
+    background-color: #DEE2E6;
+    height: 1px;
+    margin: 32px auto;
+    width: 100%;
+    border: 0;
+}
+
+.data-container hr {
+    background-color: #DEE2E6;
+    height: 1px;
+    margin: 12px auto;
+    width: 100%;
+    border: 0;
+}
+
+/* 距離 */
+.me-48 {
+    margin: 48px auto;
+}
+
+.me-64 {
+    margin: 64px auto;
+}
+
+.me-b12 {
+    margin-bottom: 12px
+}
+
+.me-b24 {
+    margin-bottom: 24px
+}
+
+/*框架*/
+.wrapper {
+    margin: 0 auto;
+    width: 1296px;
+}
+
+/* top banner-------------------------*/
+.hd-content {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hd-content nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-bar {
+    display: flex;
+}
+
+.menu-bar span {
+    margin: 12px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+span.logo {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg) no-repeat center center;
+    height: 30px;
+    width: 105px;
+    display: inline-block;
+}
+
+span.user {
+    background: url(../images/loing.svg) no-repeat center center;
+    background-size: 100%;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+}
+
+/*品牌介紹開始 ----------------------*/
+.Product-content {
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+/* 麵包屑導航 */
+.breadcrumb {
+    color: #212529;
+    font-weight: 500;
+}
+
+.breadcrumb ul li a {
+    color: #6C757D;
+    text-decoration: none;
+
+}
+
+.breadcrumb ul li a::after {
+    content: "/";
+    margin: 0 12px;
+    text-decoration: none;
+}
+
+.breadcrumb ul li:last-child:after {
+    content: "";
+    margin: 0 12px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 24px;
+    margin: 0 auto;
+}
+
+.h2-title {
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+}
+
+.h3-title {
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 16px;
+}
+
+h4.title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+nav.Product-menu {}
+
+nav.Product-menu li {
+    padding: 16px 0;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.data-item {
+    display: flex;
+    text-align: left;
+    margin: 48px auto;
+}
+
+.card-item img {
+    max-width: 100%;
+    height: auto;
+}
+.data-item img {
+    max-width: 100%;
+    margin-bottom: 12px;
+    height: auto;
+}
+.card-item li {
+    margin-bottom: 48px;
+}
+
+.Brand-intro img {
+    margin: 0 -110px 0 -110px;
+}
+
+.Brand-intro h2.title {
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+.Brand-intro ul.m-left {
+    margin-left: 24px;
+}
+
+.Brand-intro ul {
+    margin: 6px 0;
+}
+
+.Brand-intro ul li {
+    margin-bottom: 12px;
+}
+
+/* 通用樣式 */
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.col-1 {
+    padding: 0 12px;
+    width: calc(100% / 12);
+}
+
+.col-2 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 4);
+}
+
+.col-6 {
+    display: none;
+    padding: 0 12px;
+    width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 12);
+}
+
+/* 頁碼清單 -------------------------*/
+.Pagination-bar {
+    margin: 48px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pagination-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pagination-bar ul li {
+    width: 48px;
+    height: 48px;
+    margin: 0 8px;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.Pagination-bar ul li:hover {
+    background-color: #C0FA73;
+}
+
+.Pagination-bar .Previous,
+.Pagination-bar .Next {
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #212529;
+    border-bottom: 2px solid #212529;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.Pagination-bar .Previous:hover,
+.Pagination-bar .Next:hover {
+    background-color: transparent;
+    border-right: 2px solid #CACDD5;
+    border-bottom: 2px solid #CACDD5
+}
+
+.Pagination-bar .Previous {
+    transform: translateY(-50%) rotate(136deg);
+}
+
+.Pagination-bar .Next {
+    transform: translateY(-50%) rotate(315deg);
+}
+
+.Pagination-bar li:hover.Previous {
+    transform: translateY(-50%) rotate(136deg);
+}
+
+.Pagination-bar .Previous.active,
+.Pagination-bar .Next.active {
+    border-right: 2px solid #CACDD5;
+    border-bottom: 2px solid #CACDD5;
+}
+
+/* 加入會員---------------------------*/
+.Join-us {
+    background-color: #E8FEC5;
+    font-size: 24px;
+    color: #212529;
+    padding: 24px 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.Join-us span {
+    border-radius: 4px;
+    background-color: #212529;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin: 0 0 0 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* brand-data 產品資料說明 */
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+h5 {
+    margin-bottom: 8px;
+    color: #212529;
+}
+
+.text-conent {
+    margin-bottom: 16px;
+}
+
+.text-conent p {
+    margin-bottom: 16px;
+}
+
+.color-conent {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.color-conent .color-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    align-items: center;
+}
+
+.color-conent img {
+    width: 64px;
+    margin-bottom: 4px;
+}
+
+.size-conent {
+    display: flex;
+    flex-direction: column;
+}
+
+.size-conent ul {
+    margin: 8px -4px;
+}
+
+.size-conent ul li {
+    width: 160px;
+    margin: 0 4px 8px 4px;
+    border: thin solid #DEE2E6;
+    border-radius: 4px;
+    padding: 12px 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.size-conent ul li:hover {
+    border: thin solid #212529;
+}
+
+.size-conent ul li.Disabled {
+    border: thin solid #DEE2E6;
+    color: #DEE2E6;
+}
+
+.btn-conent {
+    width: 100%;
+    margin: 48px auto 32px auto;
+    display: flex;
+    gap: 8px;
+
+}
+
+button {
+    width: 50%;
+    padding: 12px 0;
+    border: thin solid #212529;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #212529;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+button.active {
+    background-color: #212529;
+    color: #fff;
+}
+
+button i.bi-heart {
+   font-size: 18px;
+    margin-right: 8px;
+}
+
+button i.bi-handbag-fill {
+    font-size: 18px;
+    margin-right: 8px;
+}
+button:nth-of-type(3) {
+    display: none;
+}
+
+/*通用樣式*/
+.container {
+    margin: 0 auto;
+}
+
+.data-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+}
+
+.data-col-5 {
+    padding: 0 12px;
+    width: calc(100% / 12*5);
+}
+
+.data-col-7 {
+    padding: 0 12px;
+    width: calc(100% / 12*7);
+}
+
+.data-col-6 {
+    padding: 4px 4px;
+    width: calc(100% / 12*6);
+}
+
+
+/* footer開始-------------------------- */
+footer {
+    background-color: #F8F9FA;
+    padding: 64px 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Copyright {
+    margin: 32px auto 0 auto;
+    color: #6C757D;
+}
+
+.Copyright p {
+    margin-bottom: 4px;
+}
+
+/* footer nav 樣式 */
+.fd-menu {
+    padding: 4px 4px 32px 4px;
+    border-bottom: 1px solid #DEE2E6;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.fd-menu .logo {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg) no-repeat center center;
+    width: 129px;
+    height: 46px;
+}
+
+.fd-menu p {
+    margin: 0;
+}
+
+.fd-menu span {
+    margin: 0 8px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+    .m-none {
+        display: none;
+    }
+
+    .d-none {
+        display: block;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding:16px 16px 0 16px
+    }
+
+    .hd-content {
+        padding: 0;
+    }
+
+    .menu-bar span {
+        margin: 8px 12px;
+
+    }
+
+    nav.Product-menu {
+        display: none;
+    }
+
+    /*  <!--麵包屑導航 --> */
+    .breadcrumb ul li a::after {
+        margin: 0 8px;
+    }
+
+    .card-container {
+        margin: 0 auto;
+    }
+ 
+    .card-item li {
+        margin-bottom: 24px;
+    }
+
+    .card-item img {
+        margin-bottom: 8px;
+  
+    }
+
+    .data-item img {
+        margin-bottom: 8px;
+        padding: 0 16px 0 0px;
+        max-width: 300px;
+    }
+
+
+    .data-container {
+        padding: 0;
+        width: 100%;
+        margin: 13px auto 24px auto;
+    }
+
+    .data-item {
+        display: flex;
+
+        margin: 16px 0;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    button {
+        width: 85%;
+    }
+ 
+
+    button:nth-of-type(1) {
+        display: none;
+    }
+
+    button:nth-of-type(3) {
+        display: block;
+        border: none;
+        width: auto;
+    }
+
+
+    button:nth-of-type(3) i {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        padding: 12px 0;
+        margin: 0 0 0 8px;
+    }
+
+    /*brand-list 頁面網格 */
+    .col-7 {
+        width: calc(100% / 1);
+        padding: 0;
+    }
+
+    .col-2 {
+        display: none;
+    }
+    .col-10 {
+        width: calc(100% / 1);
+    }
+    .col-4 {
+        padding: 0 6px;
+        width: calc(100% / 2);
+    }
+
+    /*brand-list 頁面網格 */
+    .data-row {
+        padding: 0 -8px;
+        flex-direction: column;
+    }
+
+    .data-col-6 {
+        width: calc(100% / 1);
+        padding: 0 -12px;
+    }
+
+    .col-3 {
+        width: calc(100% / 1);
+        padding: 0;
+    }
+
+    .data-col-5 {
+        width: calc(100% / 1);
+        padding: 0;
+    }
+
+    /* 頁碼 */
+    .Product-content {
+        padding: 0;
+    }
+
+    .Pagination-bar {
+        margin: 16px 0;
+    }
+
+    .Pagination-bar ul li {
+        width: 40px;
+    }
+
+    /* 加入會員 */
+    .Join-us {
+        font-size: 20px;
+        margin: 0 -12px;
+        padding: 24px;
+    }
+
+    .Join-us span {
+        margin: 0 0 0 16px;
+
+    }
+
+    /* footer */
+    footer {
+        padding: 32px 12px;
+        margin: 0 -16px;
+    }
+
+    .fd-Menu .logo {
+        padding: 8px 0;
+    }
+
+    .fd-Menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4px 4px 24px 4px;
+    }
+
+    .fd-menu span {
+        display: block;
+        padding: 12px 0;
+        text-align: left;
+        margin: 8px 12px;
+    }
+
+}
