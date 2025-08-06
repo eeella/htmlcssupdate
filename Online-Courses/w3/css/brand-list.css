@@ -40,6 +40,10 @@ h4 {
     font-weight: 500;
 }
 
+.t-decoration {
+    text-decoration: line-through;
+}
+
 /* 顏色 */
 .color_bk {
     color: #212529;
@@ -74,6 +78,7 @@ hr {
     border: 0;
 }
 
+ 
 /* 距離 */
 .me-48 {
     margin: 48px auto;
@@ -94,7 +99,7 @@ hr {
 /*框架*/
 .wrapper {
     margin: 0 auto;
-    width: 1296px;
+    max-width: 1320px;
 }
 
 /* top banner-------------------------*/
@@ -256,7 +261,7 @@ nav.Product-menu li {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -12px;
+    margin: 0 auto;
 }
 
 .col-1 {
@@ -513,7 +518,7 @@ button:nth-of-type(3) {
 .data-row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -4px;
+    margin: 0 auto
 }
 
 .data-col-5 {
@@ -568,14 +573,28 @@ footer {
 
 .fd-menu p {
     margin: 0;
+
 }
 
 .fd-menu span {
     margin: 0 8px;
     font-weight: 700;
-} 
+}
 
-@media screen and (max-width:1025px) and (min-width:320px){ 
+@media (max-width: 1200px) {
+    .wrapper {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .wrapper {
+        max-width: 960px;
+    }
+
+}
+
+@media (max-width: 767px) {
     .m-none {
         display: none;
     }
@@ -584,10 +603,16 @@ footer {
         display: block;
     }
 
+    /*框架*/
     .wrapper {
+        margin: 0 auto;
+        max-width: 720px;
+    }
+
+    /* .wrapper {
         width: 100%;
         padding: 16px 16px 0 16px
-    }
+    } */
 
     .hd-content {
         padding: 0;
@@ -707,7 +732,9 @@ footer {
 
     /* 頁碼 */
     .Product-content {
-        padding: 0;
+        padding: 0 12px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .Pagination-bar {
@@ -716,6 +743,8 @@ footer {
 
     .Pagination-bar ul li {
         width: 40px;
+         
+         
     }
 
     /* 加入會員 */
@@ -753,5 +782,13 @@ footer {
         text-align: left;
         margin: 8px 12px;
     }
+
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+
 
 }

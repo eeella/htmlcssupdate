@@ -103,13 +103,11 @@ section {
 }
 
 body {
-    font-family: "Montserrat", "Noto Sans TC", sans-serif;
+    font-family: "Noto Sans TC", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.05em;
     color: #212529;
-    font-size-adjust: 0.545;
-    box-sizing: border-box;
 }
 
 /* 設定表格的邊界 */
@@ -128,6 +126,8 @@ table {
 
 img {
     vertical-align: middle;
+    max-width: 100%;
+
 }
 
 a {

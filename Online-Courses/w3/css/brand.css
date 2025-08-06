@@ -33,17 +33,12 @@ hr {
 /*框架*/
 .wrapper {
     margin: 0 auto;
+    padding: 0 12px;
 }
 
 /* top banner-------------------------*/
 .hd-content {
-    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true) no-repeat center center;
-    padding: 151px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
+    margin: 0 auto;
 }
 
 .logo {
@@ -57,6 +52,55 @@ h1.title {
 .Sub {
     display: block;
     font-size: 28px;
+}
+
+.hd-content .storybanner {
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true) no-repeat center center;
+    background-size: cover;
+    padding: 151px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+
+
+}
+
+.hd-content nav {
+    display: flex;
+    max-width: 1296px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.menu-bar {
+    display: flex;
+}
+
+.menu-bar span {
+    margin: 12px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+span.logo {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg) no-repeat center center;
+    height: 30px;
+    width: 105px;
+    display: inline-block;
+}
+
+span.user {
+    background: url(../images/loing.svg) no-repeat center center;
+    background-size: 100%;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
 }
 
 /*品牌介紹開始 ----------------------*/
@@ -92,7 +136,6 @@ h1.title {
 }
 
 .Brand-intro img {
-    margin: 0 -110px 0 -110px;
     max-width: 100%;
 }
 
@@ -199,7 +242,8 @@ footer {
     font-weight: 700;
 }
 
-@media screen and (max-width:1024px) {
+@media (max-width: 991.98px) {
+
     .Brand-content {
         padding: 32px 12px;
         width: 100%;
@@ -208,14 +252,18 @@ footer {
     .fd-Menu {
         width: 100%;
     }
-     .Brand-intro img {
-        margin:auto;
+
+    .Brand-intro img {
+        margin: auto;
     }
 
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 767px) {
+      .m-none {
+        display: none;
+    }
+  
 
     h1.title {
         margin-bottom: 8px;
